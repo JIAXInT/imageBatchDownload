@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "图片批量下载",
+  "version": "1.0",
+  "description": "批量下载网页上的图片 by Justic.",
+  "icons": {
+    "16": "icons/icon_16.svg",
+    "32": "icons/icon_32.svg",
+    "48": "icons/icon_48.svg",
+    "128": "icons/icon_128.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["popup/index.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icons/icon_32.svg",
+    "default_title": "批量下载网页上的图片",
+    "default_popup": "popup/index.html"
+  }
+}
